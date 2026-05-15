@@ -8,7 +8,7 @@
 
 **Последнее обновление:** 15 мая 2026
 **Текущий этап:** Этап 3 — Animations секция
-**Репозиторий:** https://github.com/Vibe-Coding-Site (см. раздел «Репозиторий» ниже)
+**Репозиторий:** [Vibe-Coding-Site](https://github.com) — см. раздел «Репозиторий» (push после `gh auth login`)
 
 ---
 
@@ -175,8 +175,8 @@
 ### Этап 8 — Деплой (15 мин)
 
 **Задачи:**
-- [x] Создать репозиторий на GitHub
-- [x] `git push`
+- [ ] Создать репозиторий на GitHub
+- [ ] `git push`
 - [ ] Подключить к Vercel (import from GitHub)
 - [ ] Проверить production URL
 - [ ] Добавить URL в футер сайта
@@ -189,8 +189,18 @@
 
 | | |
 |---|---|
-| **GitHub** | `Vibe-Coding-Site` |
-| **Первый коммит** | Инициализация проекта; завершены этапы 0–2 |
+| **Имя на GitHub** | `Vibe-Coding-Site` |
+| **Ветка** | `main` |
+| **Первый коммит** | `feat: initialize project — stages 0-2 complete` |
+| **Статус push** | Локальный коммит готов; нужен `gh auth login` для создания репозитория на GitHub |
+
+После авторизации в терминале:
+
+```bash
+gh auth login
+gh repo create Vibe-Coding-Site --public --source=. --remote=origin --push
+```
+
 | **Стек** | Next.js 15, TypeScript, Tailwind v4, Framer Motion |
 
 ### Что уже в репозитории
